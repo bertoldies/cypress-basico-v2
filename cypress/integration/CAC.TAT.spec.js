@@ -7,7 +7,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
       })
 
     it('verifica o título da aplicação', function() {
-        cy.title().should('be.equal', 'Central de tendimento ao Cliente TAT')
+        cy.title().should('be.equal', 'Central de Atendimento ao Cliente TAT')
   
     })
 
@@ -139,7 +139,7 @@ it('marca ambos checkboxes 2', function() {
     .should('be.checked')
     .last()
     .uncheck()
-    .should('be.checked')
+    .should('not.be.checked')
 
 
 }) 
@@ -160,7 +160,7 @@ it('selecionar drag -and-drop', function() {
 
     cy.get('input[type="file"]')
       .should('not.have.value')
-      .selectFile('cypress/fixtures/example.json',{action: 'drag-dro'})
+      .selectFile('cypress/fixtures/example.json',{action: 'drag-drop'})
       .should(function($input){
         expect($input[0].files[0].name).to.equal('example.json')
       })

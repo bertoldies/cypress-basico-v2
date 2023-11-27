@@ -16,6 +16,8 @@ Run `npm install` (or `npm i` for the short version) to install the dev dependen
 
 ## Tests
 
+Siga os passos para fazer os testes
+
 ## Mobile
 
 Run `npm test` (or `npm t` for short version) to run the test in headless mode on a desktop viewport
